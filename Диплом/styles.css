@@ -33,6 +33,7 @@
 }
 
 
+
 .logo {
     width: 150px;
 }
@@ -60,7 +61,7 @@ a {
 
 
 .container {
-    max-width: 1920px;
+    max-width: 100%;
     position: relative;
 
 }
@@ -71,7 +72,7 @@ a {
     height: 875px;
     background-image: url('img/fon.png');
     background-repeat: no-repeat;
-    translate: 930px;
+    translate: 977px;
 }
 
 .block-menu {
@@ -138,7 +139,6 @@ a {
     box-shadow: inset 0 0 0 3px #463344;
 }
 
-
 .advantages {
     display: flex;
     justify-content: center;
@@ -165,7 +165,6 @@ a {
     margin-right: 165px;
     align-items: center;
 }
-
 
 .instructions {
     width: 350px;
@@ -203,8 +202,6 @@ a {
     margin-top: 25px;
 }
 
-
-
 .percent {
     font-size: 36px;
     text-align: center;
@@ -240,9 +237,33 @@ a {
     color: #2c1123;
 }
 
+.heading {
+    font-family: 'Noto_Serif_Light';
+    font-size: 55px;
+    margin-left: 280px;
+    margin-bottom: 40px;
+}
 
-
-.content_popular{
+.content_popular {
     justify-content: center;
     display: flex;
+}
+
+.position_1,
+.position_2,
+.position_3 {
+    padding-left: 140px;
+}
+
+.popular_text {
+    justify-content: center;
+    display: flex;
+}
+
+.popular_text_left {
+
+}
+
+.popular_text_right {
+
 }
