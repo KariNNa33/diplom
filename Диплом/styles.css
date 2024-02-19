@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Roboto-Light';
     src: url(fonts/Roboto/Roboto-Light.ttf);
@@ -42,10 +46,6 @@
     margin-right: -800px;
 }
 
-a {
-    text-decoration: none;
-}
-
 .menu {
     font-size: 20px;
     font-weight: regular;
@@ -59,11 +59,9 @@ a {
     text-decoration-color: #81637D;
 }
 
-
 .container {
     max-width: 100%;
     position: relative;
-
 }
 
 .fon {
@@ -73,6 +71,7 @@ a {
     background-image: url('img/fon.png');
     background-repeat: no-repeat;
     translate: 977px;
+    margin-right: 0;
 }
 
 .block-menu {
@@ -140,6 +139,8 @@ a {
 }
 
 .advantages {
+    margin-left: 225px;
+    margin-right: 225px;
     display: flex;
     justify-content: center;
     margin-top: 200px;
@@ -230,7 +231,6 @@ a {
     font-family: 'Roboto-Regular';
     font-weight: 400;
     font-size: 24px;
-
 }
 
 .discount_a:hover {
@@ -240,30 +240,39 @@ a {
 .heading {
     font-family: 'Noto_Serif_Light';
     font-size: 55px;
-    margin-left: 280px;
-    margin-bottom: 40px;
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .content_popular {
-    justify-content: center;
+    margin-left: 225px;
+    margin-right: 225px;
     display: flex;
+    justify-content: center;
 }
 
 .position_1,
 .position_2,
 .position_3 {
-    padding-left: 140px;
+    padding-left: 50px;
 }
 
 .popular_text {
     justify-content: center;
     display: flex;
+    width: 100%;
 }
 
 .popular_text_left {
-
+    margin-right: 200px;
 }
 
-.popular_text_right {
-
+.fon_2 {
+    margin-top: 170px;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-image: url('img/fon_2.png');
+    background-repeat: no-repeat;
 }
