@@ -20,6 +20,7 @@ a {
     font-family: 'Roboto-Regular';
     src: url(fonts/Roboto/Roboto-Regular.ttf);
 }
+
 @font-face {
     font-family: 'Roboto-Medium';
     src: url(fonts/Roboto/Roboto-Medium.ttf);
@@ -59,7 +60,9 @@ a {
     font-weight: regular;
     color: #000000;
     font-family: 'Roboto-Regular';
-    padding-left: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -73,8 +76,8 @@ a {
 }
 
 .block-menu {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -86,6 +89,14 @@ a {
     text-decoration-line: overline;
     text-decoration-color: #81637D;
     text-decoration-thickness: 1.5px;
+}
+
+.menu-left {
+    margin-left: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
 }
 
 .search,
@@ -153,6 +164,7 @@ a {
 
 .btn_1 {
     margin-left: 400px;
+
 }
 
 .btn_catalog {
@@ -299,10 +311,6 @@ a {
     width: 1600px;
 }
 
-  {
-    padding-left: 50px;
-}
-
 .popular_photo {
     width: 433px;
 }
@@ -317,8 +325,6 @@ a {
 .popular_text_left {
     width: 337px;
 }
-
-.popular_text_right {}
 
 .name_bouquet {
     font-family: 'Roboto-Light';
@@ -475,7 +481,6 @@ a {
 }
 
 .about_block {
-
     display: flex;
     flex-direction: column;
 }
@@ -484,12 +489,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .about_text {
-    width: 780px;
-    font-family: 'Roboto-Regular';
-    font-size: 32px;
+    text-align: justify;
+    width: 965px;
+    font-family: 'Roboto-Light';
+    font-size: 24px;
 }
 
 .margin50 {
@@ -504,13 +511,13 @@ a {
 .production_block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .production_block_two {
     display: flex;
     justify-content: space-between;
-    width: 904px;
+    width: 907px;
 }
 
 .hr {
@@ -561,7 +568,8 @@ footer {
 .footer_glav_text {
     font-family: 'Roboto-Regular';
     font-size: 20px;
-    color: #888888;
+    color: #81637D;
+    ;
 }
 
 .footer_mini_text {
@@ -574,11 +582,9 @@ footer {
 }
 
 .links_footer {
-    color: #888888;
+    color: #000000;
     text-decoration: none;
-} 
-
-
+}
 
 
 
@@ -596,8 +602,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 45px
-} 
- .cart_profile {
+}
+
+.cart_profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -654,49 +661,209 @@ ul.breadcrumb li a:hover {
     color: #81637D;
     text-decoration: underline;
 }
-.cart_product{
+
+.cart_product {
     display: flex;
     margin: 50px 0 0 0;
     gap: 50px;
 }
-.img_cart_product{
+
+.img_cart_product {
     display: flex;
     justify-content: space-between;
     gap: 17px;
 }
-.img_cart_product_two{
+
+.img_cart_product_two {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 17px;
-} 
-.info_cart_product{
+}
+
+.info_cart_product {
     width: 590px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.btn_cart_product{
+
+.btn_cart_product {
     display: flex;
     gap: 28px;
 }
-.description_cart_product{
+
+.description_cart_product {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.glavtext_cart_product{
+
+.glavtext_cart_product {
     font-family: 'Roboto-Medium';
     color: #000000;
     font-size: 32px;
 }
-.price_cart_product, .description{
+
+.price_cart_product,
+.description {
     font-family: 'Roboto-Regular';
     color: #000000;
     font-size: 25px;
 }
-.description_more{
+
+.description_more {
     font-family: 'Roboto-Light';
     color: #000000;
     font-size: 20px;
+}
+
+
+
+
+.error_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error_text {
+    width: 500px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.error {
+    font-family: 'Noto-Serif-Bold';
+    color: #81637D;
+    font-size: 300px;
+}
+
+
+.error_glav_text {
+    font-family: 'Roboto-Medium';
+    color: #000000;
+    font-size: 46px;
+}
+
+.error_mini_text {
+    font-family: 'Roboto-Regular';
+    color: #000000;
+    font-size: 20px;
+}
+
+.error_catalog {
+    margin-top: 10px;
+    width: 350px;
+    height: 65px;
+    border: 2px;
+    border-radius: 5px;
+    font-family: 'Roboto-Regular';
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #81637d;
+    transition: 0.3s ease-in-out;
+}
+
+.error_catalog:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #463344;
+    font-size: 26px;
+    box-shadow: inset 0 0 0 3px #81637d;
+}
+
+
+
+
+
+.production_page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.production_left {
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.production_text_zaglav {
+    font-family: 'Noto-Serif-Light';
+    font-size: 55px;
+    color: #81637d;
+    margin-bottom: 10px;
+}
+
+.production_text_mini {
+    font-family: 'Roboto-Light';
+    font-size: 22px;
+}
+
+
+
+
+
+
+.card_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card_block_left {}
+
+.card_block_right {
+    width: 450px;
+    height: 570px;
+    border: 2px solid #81637d;
+    border-radius: 30px;
+}
+
+.card_tovar_1,
+.card_tovar_2 {
+    width: 1110px;
+    height: 270px;
+    border: 2px solid #81637d;
+    border-radius: 30px;
+}
+
+.card_info{
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_img{
+    /* margin-top: 20px;
+    margin-left: 20px; */
+}
+
+.quantity{
+    width: 91px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #81637d;
+    border-radius: 6px;
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+}
+
+.card_text_zaglav{
+    font-family: 'Roboto-Regular';
+    font-size: 24px;
+}
+
+.card_text_mini{
+    font-family: 'Roboto-Regular';
+    font-size: 15px;
+    color: #81637d;
+}
+
+.card_price{
+    font-family: 'Roboto-Regular';
+    font-size: 25px;
 }
