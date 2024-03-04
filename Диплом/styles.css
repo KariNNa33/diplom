@@ -4,6 +4,11 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }
 
 .container {
@@ -358,6 +363,7 @@ a {
     background-color: #ffffff00;
     transition: 0.3s ease-in-out;
     color: #000000;
+    cursor: pointer;
 }
 
 .more:hover {
@@ -854,17 +860,25 @@ ul.breadcrumb li a:hover {
     height: 65px;
     border: 2px;
     border-radius: 5px;
-    font-family: 'Roboto-Regular';
-    font-size: 25px;
-    color: #ffffff;
     background-color: #81637d;
     transition: 0.3s ease-in-out;
 }
 
-.error_catalog:hover {
-    background: rgba(0, 0, 0, 0);
+.error_catalog_a {
+    font-family: 'Roboto-Regular';
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.error_catalog_a:hover {
     color: #463344;
     font-size: 26px;
+}
+
+
+.error_catalog:hover {
+    background: rgba(0, 0, 0, 0);
+
     box-shadow: inset 0 0 0 3px #81637d;
 }
 
@@ -892,10 +906,16 @@ ul.breadcrumb li a:hover {
 }
 
 .production_left {
-    width: 1040px;
+    width: 1140px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 55px;
+}
+
+.production_text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .production_text_zaglav {
@@ -1197,8 +1217,11 @@ ul.breadcrumb li a:hover {
 
 .filter {
     width: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 30px;
     gap: 10px;
     font-family: 'Roboto-Light';
     font-size: 35px;
@@ -1583,7 +1606,7 @@ summary:focus {
     margin-bottom: 25px;
 }
 
-.checkout_data{
+.checkout_data {
     margin-bottom: 25px;
 }
 
@@ -1601,14 +1624,14 @@ summary:focus {
 }
 
 .checkout_delivery_block {
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
 }
 
-.check{
+.check {
     margin-bottom: 10px;
 }
 
-.delivery_chekc{
+.delivery_chekc {
     color: #3C3C3C;
     font-family: 'Roboto-Regular';
     font-size: 18px;
@@ -1642,7 +1665,7 @@ summary:focus {
     padding-left: 10px;
 }
 
-.checkbox{
+.checkbox {
     width: 370px;
     display: flex;
     justify-content: space-between;
@@ -1653,13 +1676,14 @@ summary:focus {
 }
 
 
-.date{
+.date {
     font-family: 'Roboto-Regular';
     font-size: 18px;
     color: #3C3C3C;
     margin-bottom: 10px;
 }
-.input_date{
+
+.input_date {
     width: 150px;
     height: 40px;
     color: #888888;
@@ -1670,7 +1694,7 @@ summary:focus {
     text-align: center;
 }
 
-.input_time{
+.input_time {
     width: 80px;
     height: 40px;
     color: #888888;
@@ -1683,27 +1707,27 @@ summary:focus {
 
 .finish-price-offer-container,
 .finish-price-del-container,
-.finish-price-itog-container{
+.finish-price-itog-container {
     margin-top: 10px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     text-align: center;
 }
 
 .finish-price-offer-container,
-.finish-price-del-container{
+.finish-price-del-container {
     font-family: 'Roboto-Regular';
     font-size: 16px;
     color: #888888;
 }
 
-.finish-price-itog-container{
+.finish-price-itog-container {
     font-family: 'Roboto-Bold';
     font-size: 36px;
     color: #3C3C3C;
 }
 
-.btn-finish{
+.btn-finish {
     margin-top: 20px;
     width: 630px;
     height: 50px;
@@ -1712,7 +1736,7 @@ summary:focus {
     border-radius: 5px;
 }
 
-.btn-finish_check{
+.btn-finish_check {
     color: #fff;
     font-family: 'Roboto-Regular';
     font-size: 26px;
